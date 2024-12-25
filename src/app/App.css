@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .clip-triangle {
+      clip-path: polygon(51.7% 0%, 100% 100%, 0% 100%);
+    }
+  }
+  @layer utilities {
+    .clip-triangle {
+      clip-path: polygon(51.7% 0%, 100% 100%, 0% 100%);
+    }
+  }
+    
+body{
+    background-color: black;
+    overflow: hidden; 
+    margin: 0; 
+    height: 100%;
+
+  
+}
+.main {
+    position: relative; 
+    height: 100vh;
+}
+
+/* 
+.login-form {
+    box-shadow: 0px 0px 0px 0px #8A8A8A;
+    background: #FFFFFF0D;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.logın-form {
+    width: 600px;
+    height: 500px;
+    background-color:#ffffff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    box-shadow: 
+    0px 15px 30px rgba(0, 0, 0, 0.2),      
+    0px 10px 40px rgba(0, 0, 0, 0.15),   
+    0px 0px 60px rgba(0, 0, 0, 0.1),         
+    0px 0px 30px 10px rgba(255, 255, 255, 0.3); 
+  
+  }
+
+.login {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight:normal;
+   line-height: 107.52px;
+    letter-spacing: 2px;
+    text-align: left;
+    color:  #FFFFFF80;
+    margin-top: 50px;
+    margin-left: 40px;
+    
+  }
+ 
+
+.input-field {
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #FFFFFF80; 
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  
+  .input-field input {
+    width: 100%; 
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: black; 
+    color: #FFFFFF80; 
+    border: 1px solid black; 
+    outline: none;
+  }
+  
+  .input-field input::placeholder {
+    color: #FFFFFF80; 
+  }
+
+.login-button{
+    width: 182px;
+    height: 54px;
+    border-radius: 10px;
+    background: #FFFFFF1A;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+    
+  }
+  
+.login-button-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30.48px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+    color: #FFFFFF80;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+.line-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 550px; 
+    margin-top: 20px;
+}
+.separator-line {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+.line {
+    flex-grow: 1;
+    height: 0;
+    border: 1px solid #FFFFFF80;
+    opacity: 1;
+    margin: 0 20px;
+  }
+  
+.or-text {
+    font-size: 20px;
+    font-weight: 600;
+    color:  #FFFFFFA1;
+    text-align: center;
+  }
+  
+.line-2 {
+    flex-grow: 1;
+    height: 0;
+    border: 1px solid #FFFFFF80;
+    opacity: 1;
+    margin: 0 20px;
+  }
+  
+
+.image-container {
+    display: flex;
+    justify-content: start;
+    align-items: start; 
+    margin-top: 40px;
+    margin-left:130px; 
+}
+
+.image-container img {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-left:62px; 
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    
+}
+
+.image-container2 img {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+
+}
+.triangle{
+    position: relative; 
+    width: 116px;
+    height: 121px;
+    top: 50px; 
+    left: 99.37px;
+    background: #27B902CC;
+    clip-path: polygon(51.7% 0%, 100% 100%, 0% 100%);
+    margin-left: 150px;
+    transform: rotate(-50deg); 
+}
+
+.triangle-2 {
+    position: absolute; 
+    width: 116px;
+    height: 121px;
+    background: #27B902CC;
+    clip-path: polygon(51.7% 0%, 100% 100%, 0% 100%);
+    transform: rotate(50deg); 
+    bottom: 70; 
+    right: 400; 
+}
+
+.slide-left {
+    position: absolute; 
+    width: 633px;       
+    height: 889px;      
+    top: 249px;        
+    left: -275px;      
+    border-radius: 0% 66% 25% 0% / 25% 45% 0% 25%;
+    background: linear-gradient(180deg, #000AFF 0%, rgba(2, 53, 185, 0) 100%);
+
+}
+.slide-right {
+    position: absolute; 
+    width: 633px;       
+    height: 889px;
+    top: 0; 
+    right: -275px; 
+    border-radius: 0% 66% 25% 0% / 25% 45% 0% 25%; 
+    background: linear-gradient(180deg, #FF0000 0%, rgba(2, 53, 185, 0) 100%);
+    transform: rotate(-180deg); 
+    overflow: hidden; 
+} */
+
+
+
+
